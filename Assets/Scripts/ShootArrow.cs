@@ -9,7 +9,7 @@ public class ShootArrow : MonoBehaviour
     private Vector3 InitialTouchPosition;
 
 
-    private float moveSpeed = 50f;
+    public float moveSpeed = 50f;
     private float AimSenstivity = 5;
     private bool arrowReleased = false;
 
@@ -57,7 +57,10 @@ public class ShootArrow : MonoBehaviour
     void SpawnArrowInstance()
     {
         if (arrowReleased == true)
-            ArrowInstance.transform.Translate(new Vector3(0, 1, 0) * moveSpeed * Time.deltaTime);
+        {
+            // ArrowInstance.transform.Translate(new Vector3(0, 1, 0) * moveSpeed * Time.deltaTime);
+            ArrowInstance.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector3(0, 1, 0) * moveSpeed * Time.deltaTime);
+        }
 
     }
 
