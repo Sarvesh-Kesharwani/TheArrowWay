@@ -5163,9 +5163,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ArrowPrefab: {fileID: 638397535944282729, guid: f815b44e9719bc44097e492a76eb2e21,
     type: 3}
-  turnSpeed: 10
-  moveSpeed: 100
-  AimSenstivity: 10
 --- !u!4 &732936086
 Transform:
   m_ObjectHideFlags: 0

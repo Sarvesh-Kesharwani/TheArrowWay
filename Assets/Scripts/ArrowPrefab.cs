@@ -2,26 +2,26 @@
 
 public class ArrowPrefab : MonoBehaviour
 {
-
-    private Collider2D collider2D;
-
+    private CapsuleCollider2D collider;
 
     void Start()
     {
-        collider2D = GetComponent<Collider2D>();
-        StabWall();
+        collider = GetComponent<CapsuleCollider2D>();
     }
 
     void Update()
     {
 
+
     }
 
-    void StabWall()
+    void OnCollisionEnter(Collision otherCollision)
     {
-        if (collider2D.IsTouchingLayers(LayerMask.GetMask("Walls")))
+        if (otherCollision.gameObject.tag == "Wall")
         {
-            Debug.Log("Collided With Wall");
+            this.GetComponent<Rigidbody>().isKinematic = true;
+            Debug.Log("Collided");
         }
+
     }
 }

@@ -9,9 +9,8 @@ public class ShootArrow : MonoBehaviour
     private Vector3 InitialTouchPosition;
 
 
-    public float turnSpeed = 10f;
-    public float moveSpeed = 100f;
-    public float AimSenstivity = 5;
+    private float moveSpeed = 50f;
+    private float AimSenstivity = 5;
     private bool arrowReleased = false;
 
 
@@ -24,7 +23,7 @@ public class ShootArrow : MonoBehaviour
     {
         GetTouchPosition();
         SpawnArrowInstance();
-
+        Destroy(ArrowInstance, 3);
     }
 
     void GetTouchPosition()
@@ -60,7 +59,6 @@ public class ShootArrow : MonoBehaviour
         if (arrowReleased == true)
             ArrowInstance.transform.Translate(new Vector3(0, 1, 0) * moveSpeed * Time.deltaTime);
 
-
     }
 
     void Aim()
@@ -71,6 +69,8 @@ public class ShootArrow : MonoBehaviour
         ArrowInstance.transform.rotation = Quaternion.Euler(0, 0, angle);
         // ArrowInstance.transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
     }
+
+
 
 
 }
