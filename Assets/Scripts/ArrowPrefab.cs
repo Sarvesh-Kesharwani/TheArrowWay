@@ -3,25 +3,24 @@
 public class ArrowPrefab : MonoBehaviour
 {
     private CapsuleCollider2D collider;
+    // private Rigidbody2D rigidbody2D;
 
     void Start()
     {
         collider = GetComponent<CapsuleCollider2D>();
+        //  rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-
-
-    }
-
-    void OnCollisionEnter(Collision otherCollision)
-    {
-        if (otherCollision.gameObject.tag == "Wall")
+        Debug.Log("sfs");
+        if (collider.IsTouchingLayers(LayerMask.GetMask("Walls")))
         {
-            this.GetComponent<Rigidbody>().isKinematic = true;
-            Debug.Log("Collided");
+            this.GetComponent<Rigidbody2D>().isKinematic = true;
+            Debug.Log("Collided with wall!");
         }
 
     }
+
+
 }

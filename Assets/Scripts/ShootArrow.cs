@@ -23,7 +23,7 @@ public class ShootArrow : MonoBehaviour
     {
         GetTouchPosition();
         SpawnArrowInstance();
-        Destroy(ArrowInstance, 3);
+        // Destroy(ArrowInstance, 3);
     }
 
     void GetTouchPosition()
@@ -64,11 +64,12 @@ public class ShootArrow : MonoBehaviour
     void Aim()
     {
         var offset = new Vector2(touchPosition.x - ArrowInstance.transform.position.x,
-                               touchPosition.y - ArrowInstance.transform.position.y);
+            touchPosition.y - ArrowInstance.transform.position.y);
         float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg * AimSenstivity;
         ArrowInstance.transform.rotation = Quaternion.Euler(0, 0, angle);
         // ArrowInstance.transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
     }
+
 
 
 
