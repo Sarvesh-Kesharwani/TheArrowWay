@@ -13,12 +13,11 @@ public class ArrowPrefab : MonoBehaviour
     {
         if (collider.IsTouchingLayers(LayerMask.GetMask("Walls")))
         {
-            GetComponent<Rigidbody2D>().isKinematic = true;
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             Debug.Log("Collided with wall!");
         }
 
     }
-
 
 }
