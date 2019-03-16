@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 638397535944282735}
   - component: {fileID: 638397535944282734}
   - component: {fileID: 2403615648443779532}
+  - component: {fileID: 7584249120772193122}
   - component: {fileID: 3788605859291308964}
   m_Layer: 0
   m_Name: ArrowPrefab
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638397535944282729}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -8.78, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &638397535944282734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -102,6 +103,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &7584249120772193122
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638397535944282729}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0069499137, y: 0}
+  m_Size: {x: 0.26331794, y: 6.4299994}
+  m_Direction: 0
 --- !u!114 &3788605859291308964
 MonoBehaviour:
   m_ObjectHideFlags: 0

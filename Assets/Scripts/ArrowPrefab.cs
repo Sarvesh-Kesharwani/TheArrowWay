@@ -2,21 +2,12 @@
 
 public class ArrowPrefab : MonoBehaviour
 {
-    private Rigidbody2D rigidbody2D;
+
+    private Collider2D collider2D;
+
 
     void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
-    }
-
-    void Update()
-    {
-
-    }
-
-    void FireArrow()
-    {
-
-
+        
     }
 }
