@@ -11,7 +11,7 @@ public class ShootArrow : MonoBehaviour
 
     public float turnSpeed = 10f;
     public float moveSpeed = 100f;
-    public float AimSenstivity = 10;
+    public float AimSenstivity = 5;
     private bool arrowReleased = false;
 
 
@@ -60,6 +60,7 @@ public class ShootArrow : MonoBehaviour
         if (arrowReleased == true)
             ArrowInstance.transform.Translate(new Vector3(0, 1, 0) * moveSpeed * Time.deltaTime);
 
+
     }
 
     void Aim()
@@ -69,16 +70,7 @@ public class ShootArrow : MonoBehaviour
         float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg * AimSenstivity;
         ArrowInstance.transform.rotation = Quaternion.Euler(0, 0, angle);
         // ArrowInstance.transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
-
-
     }
 
 
-    /*
-    
-     if (collider2D.IsTouchingLayers(LayerMask.GetMask("Walls")))
-        {
-            Debug.Log("Collided With Wall");
-        }
-    */
 }
