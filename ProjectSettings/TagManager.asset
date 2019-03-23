@@ -18,10 +18,10 @@ TagManager:
   - 
   - BackGround
   - ForeGround
-  - Player
+  - MonkeyMan
   - Arrow
   - Walls
-  - Obstacles
+  - Jumpables
   - 
   - 
   - 
@@ -47,13 +47,13 @@ TagManager:
   - name: BaseGround
     uniqueID: 989532843
     locked: 0
-  - name: Obstacles
+  - name: Jumpables
     uniqueID: 2329321689
     locked: 0
   - name: Walls
     uniqueID: 3135186673
     locked: 0
-  - name: Player
+  - name: MonkeyMan
     uniqueID: 662645053
     locked: 0
   - name: Arrows
