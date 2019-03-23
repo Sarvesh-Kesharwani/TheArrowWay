@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2403615648443779532}
   - component: {fileID: 7584249120772193122}
   - component: {fileID: 3891120795982935770}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ArrowPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

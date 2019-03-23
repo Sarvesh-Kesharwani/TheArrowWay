@@ -9,7 +9,7 @@ public class ShootArrow : MonoBehaviour
     private Vector3 InitialTouchPosition;
 
 
-    private float moveSpeed = 1f;
+    private float moveSpeed = 5f;
     private float AimSenstivity = 2;
     private bool arrowReleased = false;
 

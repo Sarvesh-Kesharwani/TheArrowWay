@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - Wall
+  - ArrowInstance
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Player
   - Arrow
   - Walls
-  - 
+  - Obstacles
   - 
   - 
   - 
@@ -45,6 +46,9 @@ TagManager:
     locked: 0
   - name: BaseGround
     uniqueID: 989532843
+    locked: 0
+  - name: Obstacles
+    uniqueID: 2329321689
     locked: 0
   - name: Walls
     uniqueID: 3135186673

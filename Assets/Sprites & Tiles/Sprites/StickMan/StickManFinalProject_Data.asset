@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a64e5b0e436d4bed9780211ae245f7b, type: 3}
+  m_Name: StickManFinalProject_Data
+  m_EditorClassIdentifier: 
+  dataName: StickManFinalProject
+  dragonBonesJSON: {fileID: 4900000, guid: 7d8f7ece48a2ec9498221040e4726a76, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: 1204f3a3dc7c4d7488e56a0621135fce, type: 3}
+    texture: {fileID: 2800000, guid: e6d393bf5d8f82f44a20778c072646b5, type: 3}
+    material: {fileID: 2100000, guid: 978e68f4d39adbf4c9918b3f1a3c0e95, type: 2}
+    uiMaterial: {fileID: 0}
